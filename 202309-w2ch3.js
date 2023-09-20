@@ -48,11 +48,10 @@ const newSong = {
   ispeting: false,
 };
 
-console.log(addNewSong(newSong));
-console.log(listSongs);
-
-const findSongTitle = (title) => {
-  const findSong = listSongs.find((song) => songs.title === title);
+const findSongTitletoDelete = (title) => {
+  const findSong = songs.find(
+    (song) => song.title.toLowerCase() === title.toLowerCase()
+  );
 
   let findPosition = songs.indexOf(findSong);
 
@@ -61,4 +60,12 @@ const findSongTitle = (title) => {
   return songs;
 };
 
-console.log(findSongTitle("Wannabe"));
+const findSongTitle = (title) => {
+  const findSong = songs.find(
+    (song) => song.title.toLowerCase() === title.toLowerCase()
+  );
+  let findSongPosition = songs.indexOf(findSong);
+  return songs[findSongPosition];
+};
+console.log(findSongTitle(songs));
+

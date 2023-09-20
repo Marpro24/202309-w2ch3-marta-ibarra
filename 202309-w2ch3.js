@@ -37,8 +37,22 @@ const songs = [
   },
 ]
 
-function addSong (song) = > {
+const addNewSong = (newSong) => listSong.push(newSong);
+const newSong = {
+     id: 5,
+    title: "Paquito el chocolatero",  
+    artist: "Maricarmen y su trupa",
+    genre: "pop",
+    duration: 195,
+    year: 1995,
+    ispeting: no,
 
-  
-}
 
+};
+
+console.log(addNewSong(newSong));
+console.log(listSongs);
+
+
+
+const removeSong = (removedSong)

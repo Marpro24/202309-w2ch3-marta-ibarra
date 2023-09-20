@@ -69,3 +69,16 @@ const findSongTitle = (title) => {
 };
 console.log(findSongTitle(songs));
 
+
+const findSongGenres = (songList, genre) => {
+const songGenre = songList.filter((song) => {
+song.genre === genre;
+});
+return songGenre;
+
+};
+
+
+
+
+
